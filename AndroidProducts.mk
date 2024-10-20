@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_marble.mk
+    $(LOCAL_DIR)/voltage_marble.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_marble-user \
-    lineage_marble-userdebug \
-    lineage_marble-eng
+    voltage_marble-user \
+    voltage_marble-userdebug \
+    voltage_marble-eng
