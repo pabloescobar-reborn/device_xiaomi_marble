@@ -25,10 +25,10 @@ PRODUCT_SYSTEM_NAME := marble_global
 PRODUCT_SYSTEM_DEVICE := marble
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-     BuildDesc="marble_global-user 14 UKQ1.230804.001 V816.0.8.0.UMRMIXM release-keys" \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
+     BuildDesc=$(call normalize-path-list, "marble_global-user 14 UKQ1.230804.001 V816.0.8.0.UMRMIXM release-keys")
+   # TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
+   # DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-BuildFingerprint = POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.8.0.UMRMIXM:user/release-keys
+BUILD_FINGERPRINT := POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.8.0.UMRMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
