@@ -1,8 +1,4 @@
-echo 'Hello! we need to clone stuffs needed for your device, please wait tll process complete'
-
-echo 'Nuke Source stuffs'
-        rm -rf hardware/xiaomi
-        rm -rf hardware/qcom-caf/sm8450/display
+echo 'Olá, estou preparando alguns arquivos para clonning!'
 
 echo 'Cloning Basic Call Recorder Tree'
 	git clone https://github.com/Chaitanyakm/vendor_bcr vendor/bcr
@@ -21,9 +17,9 @@ echo 'Cloning Hardware Xiaomi Tree'
 	git clone https://github.com/pabloescobar-reborn/hardware_xiaomi -b fifteen hardware/xiaomi
 
 echo 'Cloning Kernel Tree'
-	git clone --depth=1 https://github.com/pabloescobar-reborn/kernel_xiaomi_sm8450_chai -b udc kernel/xiaomi/sm8450
-	git clone --depth=1 https://github.com/pabloescobar-reborn/chai_kernel_xiaomi_sm8450-modules -b main kernel/xiaomi/sm8450-modules
-	git clone --depth=1 https://github.com/pabloescobar-reborn/chai_kernel_xiaomi_sm8450-devicetrees -b main kernel/xiaomi/sm8450-devicetrees
+	git clone https://github.com/cupid-development/android_kernel_xiaomi_sm8450-devicetrees kernel/xiaomi/sm8450-devicetrees
+	git clone https://github.com/cupid-development/android_kernel_xiaomi_sm8450 kernel/xiaomi/sm8450
+	git clone https://github.com/cupid-development/android_kernel_xiaomi_sm8450-modules kernel/xiaomi/sm8450-modules
 
 echo 'Cloning Vendor Tree'
 	git clone https://github.com/pabloescobar-reborn/vendor_xiaomi_marble -b fifteen vendor/xiaomi/marble
