@@ -403,6 +403,28 @@
          non-zero. -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
 
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+        <item>@array/config_sfps_sensor_props_1</item>
+    </array>
+
+    <array name="config_sfps_sensor_props_0" translatable="false">
+        <item>local:4630946480857061761</item>     <!-- displayId -->
+        <item>1080</item>                          <!-- sensorLocationX -->
+        <item>920</item>                           <!-- sensorLocationY -->
+        <item>210</item>                           <!-- sensorRadius -->
+    </array>
+
+    <array name="config_sfps_sensor_props_1" translatable="false">
+        <item>local:4630946370515662721</item>     <!-- displayId -->
+        <item>1080</item>                          <!-- sensorLocationX -->
+        <item>920</item>                           <!-- sensorLocationY -->
+        <item>210</item>                           <!-- sensorRadius -->
+    </array>
+
     <!--Useful if you want to improve signal reception -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
