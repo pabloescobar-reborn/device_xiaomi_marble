@@ -21,16 +21,6 @@ DEVICE_PATH := device/xiaomi/marble
 # Assert
 TARGET_OTA_ASSERT_DEVICE := marble|marblein
 
-# Kernel modules
-BOOT_KERNEL_MODULES += \
-    qcom_pm8008-regulator.ko \
-    gt9916r.ko \
-    qcom-hv-haptics.ko \
-    fpc1540.ko \
-    goodix_3626.ko
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(BOOT_KERNEL_MODULES)
-BOARD_VENDOR_KERNEL_MODULES_LOAD += $(BOOT_KERNEL_MODULES)
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop

@@ -21,9 +21,9 @@ echo 'Cloning Hardware Xiaomi Tree'
 	git clone https://github.com/pabloescobar-reborn/hardware_xiaomi -b fifteen hardware/xiaomi
 
 echo 'Cloning Kernel Tree'
-	git clone --depth=1 https://github.com/pabloescobar-reborn/kernel_xiaomi_sm8450_chai -b udc kernel/xiaomi/sm8450
-	git clone --depth=1 https://github.com/pabloescobar-reborn/chai_kernel_xiaomi_sm8450-modules -b main kernel/xiaomi/sm8450-modules
-	git clone --depth=1 https://github.com/pabloescobar-reborn/chai_kernel_xiaomi_sm8450-devicetrees -b main kernel/xiaomi/sm8450-devicetrees
+	git clone --depth=1 https://github.com/pabloescobar-reborn/kernel_xiaomi_sm8450 -b lineage-22.0 kernel/xiaomi/sm8450
+	git clone --depth=1 https://github.com/pabloescobar-reborn/kernel_xiaomi_sm8450-modules.git -b lineage-22.0 kernel/xiaomi/sm8450-modules
+	git clone --depth=1 https://github.com/pabloescobar-reborn/kernel_xiaomi_sm8450-devicetrees -b lineage-22.0 kernel/xiaomi/sm8450-devicetrees
 
 echo 'Cloning Vendor Tree'
 	git clone https://github.com/pabloescobar-reborn/vendor_xiaomi_marble -b fifteen vendor/xiaomi/marble
