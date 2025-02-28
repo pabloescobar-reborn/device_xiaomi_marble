@@ -9,3 +9,10 @@ persist.vendor.camera.ois.video=1
 
 # Xiaomi
 ro.product.mod_device=marble_global
+
+#infinity_x
+ro.product.marketname=Poco F5
+ro.infinity.soc=Snapdragon® 7+ Gen 2
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1264 x 2780, 120 Hz
+ro.infinity.camera=64MP + 8MP + 2MP

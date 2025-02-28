@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
 # Inherit from common RisingOS configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_marble
@@ -29,19 +29,26 @@ BUILD_FINGERPRINT := POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.10.0.UM
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# RisingOS stuff
+# infinity_x  stuff
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_EPPE := true
 TARGET_ENABLE_BLUR := true
-TARGET_HAS_UDFPS := false
-WITH_GMS := true
 
-# Quick Switch
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
+# Whether you are compiling being an OFFICIAL Maintainer:
+INFINITY_BUILD_TYPE := OFFICIAL
 
-# Maintainer stuff
-RISING_MAINTAINER=SharmagRit
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon® 7+ Gen 2" \
-    RisingMaintainer="SharmagRit"
+# Maintainer Name
+INFINITY_MAINTAINER := PabloEscobar
+
+# Whether the compiled package ships Widely Used Minimal Google Apps:
+WITH_GAPPS := true
+
+# Whether the compiled package ships Complete present Google Apps:
+TARGET_SHIPS_FULL_GAPPS := true # (WITH_GAPPS must be set to true alongside)
+
+# Whether the compiled shipped gapps package uses Google Dialer, Messaging, Contacts:
+TARGET_BUILD_GOOGLE_TELEPHONY := false # (WITH_GAPPS must be set to true alongside)
+
+# Whether the compiled package ships Moto Calculator irrespective VANILLA or GAPPS:
+USE_MOTO_CALCULATOR := false
